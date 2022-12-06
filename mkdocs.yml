@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: VultureOs Documentation
+
+theme:
+    name: material
+    icon:
+      admonition:
+        note: material/note
+        warning: octicons/alert-16
+        info: octicons/info-16
+
+    palette:
+      toggle:
+        - name: Light
+          scheme: light
+        - name: Dark
+          scheme: slate
+
+    features:
+        - navigation.sections
+        - navigation.top
+        - header.autohide
+        - content.code.
+        - navigation.indexes
+        - navigation.expand
+
+    highlightjs: true
+    hljs_languages:
+        - python
+
+
+plugins:
+    - search
+    - termynal
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - tables
+  - attr_list
+  - md_in_html
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
